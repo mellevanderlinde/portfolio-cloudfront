@@ -166,4 +166,14 @@ export const albums: Album[] = [
     coverId: 'ab67616d0000b27345e164e2e09a77ae799832d3',
     name: 'Koop - Waltz For Koop',
   },
+  {
+    albumId: '7xl50xr9NDkd3i2kBbzsNZ?si=9-cGLABxTLSBa0fRD-Ngig',
+    coverId: 'ab67616d0000b27309fd83d32aee93dceba78517',
+    name: 'Red Hot Chili Peppers - Stadium Arcadium',
+  },
+  {
+    albumId: '2Y9IRtehByVkegoD7TcLfi?si=K5ZBUZZjRmCjnk-mCDUVHg',
+    coverId: 'ab67616d0000b27394d08ab63e57b0cae74e8595',
+    name: 'Red Hot Chili Peppers - Californication',
+  },
 ]

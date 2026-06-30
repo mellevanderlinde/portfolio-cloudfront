@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@11.9.0",
   "scripts": {
     "ci": "nx run-many -t lint build test",
     "dev": "nx run website:dev"
