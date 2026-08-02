@@ -1,4 +1,5 @@
 import type { StackProps } from 'aws-cdk-lib'
+import type { CfnCertificate } from 'aws-cdk-lib/aws-certificatemanager'
 import type { Construct } from 'constructs'
 import { Duration, RemovalPolicy, Stack } from 'aws-cdk-lib'
 import { Certificate, CertificateValidation } from 'aws-cdk-lib/aws-certificatemanager'
@@ -51,6 +52,10 @@ export class PortfolioStack extends Stack {
       subjectAlternativeNames: [wwwDomainName],
       validation: CertificateValidation.fromDns(zone),
     })
+
+    // Fix for certificate marked as drifted by CloudFormation
+    const cfnCertificate = certificate.node.defaultChild as CfnCertificate
+    cfnCertificate.subjectAlternativeNames = [domainName, wwwDomainName]
 
     const function_ = new CloudFrontFunction(this, 'Function', {
       code: FunctionCode.fromFile({ filePath: 'dist/src/index.js' }),

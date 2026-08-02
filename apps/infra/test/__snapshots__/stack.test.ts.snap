@@ -317,6 +317,7 @@ exports[`matches with snapshot 1`] = `
           },
         ],
         "SubjectAlternativeNames": [
+          "mellevanderlinde.com",
           "www.mellevanderlinde.com",
         ],
         "Tags": [
