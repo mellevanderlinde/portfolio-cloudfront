@@ -153,7 +153,6 @@ function splitText(text: string, per: 'line' | 'word' | 'char'): string[] {
   if (per === 'line') {
     return text.split('\n')
   }
-  // eslint-disable-next-line e18e/prefer-static-regex
   return text.split(/(\s+)/)
 }
 

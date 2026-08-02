@@ -7,7 +7,7 @@
   },
   "devDependencies": {
     "@ml/eslint-config": "github:mellevanderlinde/eslint-config#v1.7.0",
-    "eslint": "^10.1.0",
-    "nx": "^22.4.4"
+    "eslint": "^10.8.0",
+    "nx": "^23.1.1"
   }
 }
