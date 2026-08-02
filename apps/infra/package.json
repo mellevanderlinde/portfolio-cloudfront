@@ -8,16 +8,16 @@
     "test": "vitest run --exclude dist"
   },
   "dependencies": {
-    "aws-cdk-lib": "^2.237.0",
-    "constructs": "^10.4.5",
+    "aws-cdk-lib": "^2.263.0",
+    "constructs": "^10.8.0",
     "website": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "^25.2.0",
-    "aws-cdk": "^2.1104.0",
-    "cdk-nag": "^2.37.55",
+    "@types/node": "^25.9.5",
+    "aws-cdk": "^2.1134.0",
+    "cdk-nag": "^2.38.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.18"
+    "vitest": "^4.1.10"
   }
 }
